@@ -1,0 +1,54 @@
+###
+POST http://localhost:3977/api/v1/users/user HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Felipe",
+    "lastname": "Londoño",
+    "email": "pipe@ucaldas.edu.co",
+    "contact": {
+        "cellphone": 3242658789,
+        "address": {
+            "city": "Mongolia",
+            "code_zip": 240001,
+            "geolocalization": [458,687]
+        }
+    },
+    "proffession": {
+        "name": "Monja",
+        "organization": "Convento",
+        "position_job": "Lava platos"
+    }
+}
+
+###
+GET http://localhost:3977/api/v1/users/user HTTP/1.1
+
+###
+GET http://localhost:3977/api/v1/users/user/6348a5e9a1967db8e36adfad HTTP/1.1
+
+###
+DELETE  http://localhost:3977/api/v1/users/user/6348a5e9a1967db8e36adfad HTTP/1.1
+
+###
+PUT  http://localhost:3977/api/v1/users/user/63474ef2aeced9a5824b243a HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Sebastián",
+    "lastname": "Martínez",
+    "email": "sebmart@ucaldas.edu.co",
+    "contact": {
+        "cellphone": 3202085014,
+        "address": {
+            "city": "Manizales",
+            "code_zip": 170001,
+            "geolocalization": [963,874]
+        }
+    },
+    "proffession": {
+        "name": "Desarrollador",
+        "organization": "Google",
+        "position_job": "Tester"
+    }
+}
